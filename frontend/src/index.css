@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+.mainmenu a:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px rgb(46, 2, 150);  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+  .mainmenu a:hover:after { transform: scaleX(1); }
